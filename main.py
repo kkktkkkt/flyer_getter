@@ -14,6 +14,9 @@ import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from flyer_fetcher import get_latest_flyer, download_image
 from image_analyzer import analyze_all_pages, Product
 
