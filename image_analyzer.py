@@ -42,7 +42,7 @@ def analyze_flyer_image(image_bytes: bytes, page_num: int, client: anthropic.Ant
     image_b64 = base64.standard_b64encode(image_bytes).decode("utf-8")
 
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-sonnet-4-6",
         max_tokens=4096,
         system=SYSTEM_PROMPT,
         messages=[
